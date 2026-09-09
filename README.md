@@ -3,8 +3,8 @@
 Documented cloud security investigations, built in a live Azure tenant (Mad Hat Labs, a multi-user training environment).
 
 Target role: SOC Analyst / Security Analyst
-Currently: [your role] | [City / Remote]
-Contact: [email] · [LinkedIn URL]
+Currently: [Business Developer] | [Remote]
+Contact: [adrianb.urena@gmail.com] · [LinkedIn.com/adrianb.urena]
 
 ## Investigations
 | # | Title | Focus | Write-up |
@@ -19,3 +19,5 @@ Contact: [email] · [LinkedIn URL]
 | 8 | Hunt the Threat | SIEM operations (Sentinel) | coming, week 8 |
 | 9 | Score the Tenant | Cloud security posture | coming, week 9 |
 | 10 | The Breach (capstone) | Full incident investigation | coming, week 10 |
+
+By January 1st, [90 days out], I will be interview-ready for [SOC Analyst / Security Analyst] [remote] roles, with documented investigations, a rebuilt resume, and 1,000+ applications submitted. I commit to [40] hours/week, one chapter/week, and daily check-ins.
