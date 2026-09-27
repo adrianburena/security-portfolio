@@ -1,4 +1,4 @@
-# [Title, outcome-flavored: "Investigating an Identity Attack in Entra ID"]
+# The Operation Dead Deploy:Investigating a four-stage forensic operation in Azure
 
 ## Scenario
 2 to 3 sentences. What was the situation and what question did the investigation answer? Frame it like a work ticket, not homework.
