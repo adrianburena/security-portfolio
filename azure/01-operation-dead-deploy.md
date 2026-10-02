@@ -16,22 +16,22 @@ On a fist stage, the deployed resouce is sought. For that, Resource groups in th
 
 As a second finding, it's been set up in EastUS Location while most of the other resources are on CentralUS. Correct location to be evaluated.
 
-![Wrong Naming Convention](azure\Images\01-operation-dead-deploy\stage1-name-audit.JPG)
+![Wrong Naming Convention](Images/01-operation-dead-deploy/stage1-name-audit.JPG)
 
 **Stage 2**: The payload is inspected.
 After inspecting the resource group, there's one storage account linked to it. Also, there's 1 succesful deployment log. Inspecting the storage in there, tags are analyzed revealing the ownership, cost center and lifycle. Cost-center hasn't been properly assinged.
 
-![Tags](azure\Images\01-operation-dead-deploy\stage2-tags-audit.JPG)
+![Tags](Images\01-operation-dead-deploy\stage2-tags-audit.JPG)
 
 **Stage 3**: Tracing the deployment.
 On the deployment blade, the deployment record shows timestaps to correlate with security alerts and create an incident timeline. It can also reveal the responsible for each deployment.
 
-![Deployment timestamps](azure\Images\01-operation-dead-deploy\stage3-trace-deployment.JPG)
+![Deployment timestamps](Images\01-operation-dead-deploy\stage3-trace-deployment.JPG)
 
 **Stage 4**: Policies.
 Navigating to the resource group's "Policies" blade, there's existing policy about naming convention. As it was found, the parameter value was set to "Audit" instead of "Deny". The effects for this is an alert instead of a denied deployment.
 
-![Deployment timestamps](azure\Images\01-operation-dead-deploy\stage4-broken-policies.JPG)
+![Deployment timestamps](Images\01-operation-dead-deploy\stage4-broken-policies.JPG)
 
 ## What broke / what surprised me
 The importance of properly configured policies is vital to avoid undesired deployments and other issues. Also, proper tagging can help personel to understand a resource lifecycle, cost center and ownership in a speedy manner and as for the deployment blade, we can get a full picture of the story behind the deployment.
