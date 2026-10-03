@@ -13,13 +13,13 @@ Documented cloud security investigations, built in a live Azure tenant.
 | 1 | [Operation Dead Deploy](azure/01-operation-dead-deploy.md) | Governance forensics, deployment audit trail | 16/09/2026 |
 | 2 | [The Stolen Identity](azure/02-the-stolen-identity.md) | App registration attack kill chain (Entra ID) | 21/09/2026 |
 | 3 | [Privilege Audit](azure/03-privilege-audit.md) | RBAC and least privilege | 26/09/2026 |
-| 4 | [Bucket Looting](azure/04-bucket-looting.md) | Storage exposure hunting | Tentative: October 2026 |
-| 5 | [Find the Anomaly](azure/05-find-the-anomaly.md) | Log analysis and KQL | Planned: 04/10/2026 |
-| 6 | [Hunt the Treath](azure/06-hunt-the-threat.md) | SIEM operations (Sentinel) | Tentative: October 2026 |
-| 7 | [Network the Operative](azure/07-network-the-operative.md) | Network segmentation | Tentative: October 2026 |
-| 8 | [Score the Tenant](azure/08-score-the-tenant.md) | Cloud security posture | Tentative: November 2026 |
-| 9 | [Spin Up and Lock Down](azure/09-spin-up-and-lock-down.md) | Compute attack surface | Tentative: 30/09/2026 |
-| 10 | [The Breach](<azure/10-the-breach(capstone).md>) | Full incident investigation | Tentative: November 2026 |
+| 4 | [The Friday Deploy](azure/04-the-friday-deploy.md) | Compute attack surface | 30/09/2026 |
+| 5 | [Network the Operative](azure/05-network-the-operative.md) | Network segmentation | Tentative: October 2026 |
+| 6 | [Bucket Looting](azure/06-bucket-looting.md) | Storage exposure hunting | Tentative: October 2026 |
+| 7 | [Find the Anomaly](azure/07-find-the-anomaly.md) | Log analysis and KQL | Planned: 04/10/2026 |
+| 8 | [Hunt the Threat](azure/08-hunt-the-threat.md) | SIEM operations (Sentinel) | Tentative: October 2026 |
+| 9 | [Score the Tenant](azure/09-score-the-tenant.md) | Cloud security posture | Tentative: November 2026 |
+| 10 | [The Breach (capstone)](azure/10-the-breach-capstone.md) | Full incident investigation | Tentative: November 2026 |
 
 **HackerMentor Jr Pentester Certifier**, Try Hack Me labs environment. [Spanish]
 Beginner Linux for pentesters, Hacking Wi-Fi, Phishing Workshop, Network fundamentals, Auditing and Pentesting for Mobile Apps, Mitre ATT&CK

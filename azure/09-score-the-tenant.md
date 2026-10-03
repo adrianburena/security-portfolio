@@ -1,4 +1,4 @@
-# Privilege Audit: D
+# Score the Tenant
 
 ## Scenario
 2 to 3 sentences. What was the situation and what question did the investigation answer? Frame it like a work ticket, not homework.
