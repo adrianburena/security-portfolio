@@ -10,7 +10,7 @@ Documented cloud security investigations, built in a live Azure tenant.
 ## Investigations
 | # | Title | Focus | Write-up |
 |---|-------|-------|----------|
-| 1 | [Operation Dead Deploy](azure/01-operation-dead-deploy.md) | Governance forensics, deployment audit trail | 30/09/2026 |
+| 1 | [Operation Dead Deploy](azure/01-operation-dead-deploy.md) | Governance forensics, deployment audit trail | 16/09/2026 |
 | 2 | [The Stolen Identity](azure/02-the-stolen-identity.md) | App registration attack kill chain (Entra ID) | 21/09/2026 |
 | 3 | [Privilege Audit](azure/03-privilege-audit.md) | RBAC and least privilege | 26/09/2026 |
 | 4 | [Bucket Looting](azure/04-bucket-looting.md) | Storage exposure hunting | Tentative: October 2026 |
