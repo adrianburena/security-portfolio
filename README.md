@@ -27,12 +27,12 @@ Documented Try Hack Me labs
 
 | # | Title | Focus | Write-up |
 |---|-------|-------|----------|
-| 1 | [Nebula](tryhackme-labs (legacy)/reto-02-nebula.pdf) | Basic Pentesting, Nmap, Gobuster, Linpeas, JohnTheRipper, Hydra, Enum4linux | 07/11/2025 |
-| 2 | [Blue](tryhackme-labs (legacy)/reto-03-blue.pdf) | Vulnerability Exploitation, Nmap, Metaexploit | 12/11/205 |
-| 3 | [University & Dark Corp](tryhackme-labs (legacy)/reto-04-university-y-dark-corp.pdf) | Dirbuster, ReverseShells, Hydra, GTGOBINS, Linpeas | 23/11/25 |
-| 4 | [Game Zone](tryhackme-labs (legacy)/reto-05-game-zone.pdf) | SQL Exploitation, Hashid, RevShells, Nmap  | 26/11/25|
-| 5 | [Steel Mountain](tryhackme-labs (legacy)/reto-06-steel-mountain.pdf) | Vulnerability Analysis, Advanced Port Scanning, Exploitation, Privilege Escalation | 05/12/25|
-| 6 | [Pivot](tryhackme-labs (legacy)/reto-07-pivot.pdf) | Pivoting, SQL, Metasploit, Nmap. | 10/12/25 |
-| 7 | [Alfred](tryhackme-labs (legacy)/reto-08-alfred.pdf) | Jenkins, WebHacking, Nmap, Privilege Escalation | 18/12/25 |
+| 1 | [Nebula](<tryhackme-labs (legacy)/reto-02-nebula.pdf>) | Basic Pentesting, Nmap, Gobuster, Linpeas, JohnTheRipper, Hydra, Enum4linux | 07/11/2025 |
+| 2 | [Blue](<tryhackme-labs (legacy)/reto-03-blue.pdf>) | Vulnerability Exploitation, Nmap, Metaexploit | 12/11/205 |
+| 3 | [University & Dark Corp](<tryhackme-labs (legacy)/reto-04-university-y-dark-corp.pdf>) | Dirbuster, ReverseShells, Hydra, GTGOBINS, Linpeas | 23/11/25 |
+| 4 | [Game Zone](<tryhackme-labs (legacy)/reto-05-game-zone.pdf>) | SQL Exploitation, Hashid, RevShells, Nmap  | 26/11/25|
+| 5 | [Steel Mountain](<tryhackme-labs (legacy)/reto-06-steel-mountain.pdf>) | Vulnerability Analysis, Advanced Port Scanning, Exploitation, Privilege Escalation | 05/12/25|
+| 6 | [Pivot](<tryhackme-labs (legacy)/reto-07-pivot.pdf>) | Pivoting, SQL, Metasploit, Nmap. | 10/12/25 |
+| 7 | [Alfred](<tryhackme-labs (legacy)/reto-08-alfred.pdf>) | Jenkins, WebHacking, Nmap, Privilege Escalation | 18/12/25 |
 
 By January 1st, 90 days out, I will be interview-ready for SOC Analyst / Security Analyst remote roles, with documented investigations, a rebuilt resume, and 1,000+ applications submitted. I commit to 40 hours/week, one chapter/week, and daily check-ins.
