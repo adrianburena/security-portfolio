@@ -67,10 +67,11 @@ Also, rotating or deleting the app secret will not work if persistence goes unde
 ## Findings and recommendations
 | Finding | Evidence | Impact | Recommendation |
 | --- | --- | --- | --- |
-| Certificates & secrets | Expiration date too high | Active stolen credential | Rotate or delete the secret |
-| Rogue app "*Labs-App" | New app set as owner of Legacy-Sync-Service | Rogue app as owner, capable of creating, editing, and reading | Delete malicious app |
-| Expose an API | Legacy-Sync-Service exposed | Acts as a secured backend resource | Retire the scope and URI |
-| Spoofed application URI & user consent display name | Permission request screen | Active token-stealing infrastructure | Delete |
+| Certificates & secrets | Expiration date too high | Active stolen credential | Delete the attacker-added secret and rotate compromised credentials. Configure alerts for new client secrets. |
+| Rogue app "*Labs-App" | New app set as owner of Legacy-Sync-Service | Rogue app as owner, capable of creating, editing, and reading | Remove the rogue service principal from the legacy app's Owners list, then disable or delete the malicious app. Audit every app registration's Owners list with the same rigor as directory role membership. |
+| Expose an API | Legacy-Sync-Service exposed | Acts as a secured backend resource | Delete the injected custom API scope. Identify and explicitly revoke any malicious `OAuth2PermissionGrant`; credential rotation and session revocation do not remove the consent grant. |
+| Spoofed application URI & user consent display name | Permission request screen | Active token-stealing infrastructure | Remove the attacker-controlled redirect URI and deceptive consent display text. Configure alerts for new redirect URIs. |
+| Default user app registration (preventive recommendation) | Rogue app registration; tenant-wide registration setting not verified | Uncontrolled app creation can introduce unmanaged identities | Disable default user app registration by setting `Users can register applications` to `No`; allow approved users to register applications through controlled permissions. |
 
 ## What I learned
 - Better controls, such as denying access from unusual IPs, requiring corporate devices, and geography-based restrictions, would improve security.
