@@ -15,32 +15,32 @@ Clearance: operative (Reader access)
 Recreating the scene, the attacker's first move was an employee, phished by a fake login page. They typed their credentials on a spoofed site, including MFA.
 Attackers stole the session token with an MFA-satisfied claim, allowing reuse of an MFA-authenticated session, subject to applicable Conditional Access controls.
 
-[App Registrations](azure/Images/02-the-stolen-identity/stage1-app-registrations.JPG)
+![App Registrations](Images/02-the-stolen-identity/stage1-app-registrations.JPG)
 
 The incident response team logged the entry method as metadata on the legacy app. The first step is to investigate the internal notes property that the organization uses to track context. As the victim was the owner of the Legacy-Sync-Service, it was possible to add new owners.
 
-[Legacy Sync Service](azure/Images/02-the-stolen-identity/stage1-legacy-sync-service.JPG)
+![Legacy Sync Service](Images/02-the-stolen-identity/stage1-legacy-sync-service.JPG)
 
 **Stage II**: Escalate
 The next step would be to investigate what the victim had access to. The attacker might have been able to escalate privileges with permissions on the compromised account.
 Under the Certificates & secrets blade, a client secret was found expiring on 12/31/2099. This allowed attackers to authenticate using client credentials as the service principal by using the app’s existing, admin-consented application permissions.
 
-[Certs And Secrets](azure/Images/02-the-stolen-identity/stage2-certs-and-secrets.JPG)
+![Certs And Secrets](Images/02-the-stolen-identity/stage2-certs-and-secrets.JPG)
 
 **Stage III**: Pivot
 On the Owners blade, a rogue app was found.
 If the secret is rotated or eliminated, the attacker's access would expire too. This is why the attackers registered a different app and added it to the owners list of the Legacy-Sync-Service, so they could mint more app secrets.
 
-[API Permissions](azure/Images/02-the-stolen-identity/stage3-api-permissions.JPG)
+![API Permissions](Images/02-the-stolen-identity/stage3-api-permissions.JPG)
 
 The rogue app was set as the owner of the legacy app.
 
-[Owners](azure/Images/02-the-stolen-identity/stage3-owners.JPG)
+![Owners](Images/02-the-stolen-identity/stage3-owners.JPG)
 
 **Stage IV**: Persist
 Looking for other services compromised in the incident, a persistence mechanism was found in the "Expose an API" blade. Acting as a secure application, other applications can call it. Attackers can use the rogue app credentials to launch a new phishing campaign with the custom scope added. This means other apps can ask for a sync on behalf of a user, which is allowed under Entra policies.
 
-[Expose an API](azure/Images/02-the-stolen-identity/stage4-api-expose.JPG)
+![Expose an API](Images/02-the-stolen-identity/stage4-api-expose.JPG)
 
 **Stage V**: Loot
 The attacker could potentially collect tokens from other users in the tenant. The Expose an API blade shows a custom scope that silently delegates access on behalf of users to the malicious app. This could allow the attacker to act as the user on the legacy app and utilize the legacy app's privileged permissions. This could enable a "confused deputy" attack.
@@ -58,7 +58,7 @@ client_id={ROGUE-APP-CLIENT-ID}
 
 If a user who has already logged in and likely passed MFA clicks the phishing link, they are show the permission request, if accepted the code is sent to the URI, exchanged for the actual token and a call to the Legacy-Sync-Service. 
 
-[Permission Request](azure/Images/02-the-stolen-identity/stage5-phishing.JPG)
+![Permission Request](Images/02-the-stolen-identity/stage5-phishing.JPG)
 
 ## What broke / what surprised me
 The most incredible part is that a single compromised account can quickly turn into a much bigger problem, with associated risks such as privilege escalation at the tenant level.
