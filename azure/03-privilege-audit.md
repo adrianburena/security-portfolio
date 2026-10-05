@@ -26,17 +26,17 @@ The IAM blade is part of every scope. For this first strategy, the role assignme
 
 One account with many redundant Owner roles across multiple resources was found (RBAC-01). These roles may have been assigned by a recurring script, manually, or through dynamic groups.
 
-![Portal Blade](azure/Images/03-privilege-audit/01-portal-blade.JPG)
+![Portal Blade](Images/03-privilege-audit/01-portal-blade.JPG)
 
 b) Azure CLI enumeration <br>
 The command line interface (CLI) can use commands like Get-AzRoleAssignment or az role assignment list --resource-group ResourceGroupName to enumerate the same assignments as the IAM blade -> export .csv
 The advantage offered by the CLI is that it is scriptable and it is repeatable.
 
-![CLI](azure/Images/03-privilege-audit/02-cli.JPG)
+![CLI](Images/03-privilege-audit/02-cli.JPG)
 
 A .JSON file can be exported for full analysis. As a second finding (RBAC-02), there is an account with no principalName. This is an orphaned account that was deleted and whose permissions were not revoked.
 
-![Orphaned Account](azure/Images/03-privilege-audit/03-orphaned-account.JPG)
+![Orphaned Account](Images/03-privilege-audit/03-orphaned-account.JPG)
 
 c) Resource Graph KQL sweep <br>
 The CLI and IAM blade both work with only one scope at a time. Resource Graph offers the possibility to audit the whole tenant in a single query with KQL (Kusto Query Language).
@@ -55,7 +55,7 @@ authorizationresources
 
 In this case, a specific account was searched for during the audit.
 
-![KQL](azure/Images/03-privilege-audit/04-kql.JPG)
+![KQL](Images/03-privilege-audit/04-kql.JPG)
 
 d) PIM eligible-versus-active export. 
 
@@ -70,29 +70,29 @@ PIM -> Manage -> Subscription -> Resource Group -> Manage -> Assignments -> Expo
 
 A deleted account with unrevoked permanent Reader access was found (RBAC-02).
 
-![PIM](azure/Images/03-privilege-audit/05-pim.JPG)
+![PIM](Images/03-privilege-audit/05-pim.JPG)
 
 The Hunt
 
 Until now, the findings have occurred with standard Reader access. The account is eligible for elevated privileges on a hidden resource group, so a request was filed in order to inspect the group.
 
-![The Hunt - Resouce Group](azure/Images/03-privilege-audit/06-resource-group.JPG)
+![The Hunt - Resouce Group](Images/03-privilege-audit/06-resource-group.JPG)
 
 The file for the hidden resource group is exported and analyzed.
 
-![The Hunt - Export](azure/Images/03-privilege-audit/07-export.JPG)
+![The Hunt - Export](Images/03-privilege-audit/07-export.JPG)
 
 An account was found with permanent Owner privileges (RBAC-03).
 
-![Owner found](azure/Images/03-privilege-audit/08-owner.JPG)
+![Owner found](Images/03-privilege-audit/08-owner.JPG)
 
 It can also be found using the CLI.
 
-![The Hunt - CLI](azure/Images/03-privilege-audit/09-cli-rbac-03.JPG)
+![The Hunt - CLI](Images/03-privilege-audit/09-cli-rbac-03.JPG)
 
 And using Resource Graph with KQL, the same result.
 
-![The Hunt - Resouce Graph](azure/Images/03-privilege-audit/10-resource-graph-verification.JPG)
+![The Hunt - Resouce Graph](Images/03-privilege-audit/10-resource-graph-verification.JPG)
 
 ## What broke / what surprised me
 There are many different ways to retrieve information in Azure. Sometimes, for "convenience," orphaned accounts are not displayed with some methods. Also, the different methods offer different advantages over others.
