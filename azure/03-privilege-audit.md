@@ -6,7 +6,7 @@ After a previous incident involving stolen identity credentials, a confused depu
 ## Environment
 **Azure Cloud**
 
-Services/tools: Microsoft Entra ID, app registrations, enterprise applications, and API permissions.
+Services/tools: Microsoft Entra ID, IAM Blade, CLI, KQL, PIM and Resource Graph permissions.
 
 Environment: live multi-user Azure training tenant.
 
