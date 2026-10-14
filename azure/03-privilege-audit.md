@@ -113,3 +113,5 @@ This are the advantages/disadvantages of each method:
 | Azure CLI            | Same, plus null principalName (orphans)     | One scope per run                   |
 | Resource Graph (KQL) | Whole tenant in one query                   | Eligible assignments                |
 | PIM export           | Eligible vs active, activation history      | Assignments outside PIM             |
+
+End report.

@@ -49,4 +49,4 @@ The importance of properly configured policies is vital to avoid undesired deplo
 - Proper naming is there for a reason. It's easier to identify any resource and its importance if it is properly named. Real-world scenarios: not following the naming convention when there are many resources might reduce efficiency when searching for specific resources, potential unwanted or unauthorized resources may sit there for days or weeks before someone spots them, and resources may accumulate and cause alert fatigue.
 - A policy set to Audit records non-compliance but does not block the deployment, and this could be potentially dangerous if preventive enforcement is required. Real-world scenarios: a policy is in place to allow only basic VMs for testers (B-series), but it has been set to Audit. A developer deploys an N-series VM for testing. This could increase billing because the deployment would go through and record an audit event; an alert notification would require separate configuration. A Deny policy with enforcement enabled would block the non-compliant VM creation request.
 
-End report
+End report.
