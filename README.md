@@ -1,10 +1,9 @@
 # security-portfolio
 
-Target role: SOC Analyst / Security Analyst
-Currently: [Business Developer] | [Remote]
+Target role: SOC Analyst / Cloud Analyst [Remote]
 Contact: [adrianb.urena@gmail.com] · [LinkedIn.com/adrianb.urena]
 
-**Mad Hat Labs**, a multi-user training environment
+**Mad Hat**, a multi-user training environment
 Documented cloud security investigations, built in a live Azure tenant.
 
 ## Investigations
@@ -21,7 +20,7 @@ Documented cloud security investigations, built in a live Azure tenant.
 | 9 | [Score the Tenant](azure/09-score-the-tenant.md) | Cloud security posture | Tentative: November 2026 |
 | 10 | [The Breach (capstone)](azure/10-the-breach-capstone.md) | Full incident investigation | Tentative: November 2026 |
 
-**Actual Business Case**
+**Real Business Case**
 | # | Title | Focus | Write-up |
 |---|-------|-------|----------|
 | 1 | [GRC Readiness Assestment](<grc/Cybersecurity_Gap_Assessment_2026_REDACTED.pdf>) | Governance, risk and compliance assestment | 14/08/2026 |
@@ -40,6 +39,3 @@ Documented Try Hack Me labs
 | 6 | [Pivot](<tryhackme-labs(legacy)/reto-07-pivot.pdf>) | Pivoting, SQL, Metasploit, Nmap. | 10/12/25 |
 | 7 | [Alfred](<tryhackme-labs(legacy)/reto-08-alfred.pdf>) | Jenkins, WebHacking, Nmap, Privilege Escalation | 18/12/25 |
 
-
-
-By January 1st, 90 days out, I will be interview-ready for SOC Analyst / Security Analyst remote roles, with documented investigations, a rebuilt resume, and 1,000+ applications submitted. I commit to 40 hours/week, one chapter/week, and daily check-ins.
