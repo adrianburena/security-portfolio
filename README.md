@@ -1,6 +1,6 @@
 # security-portfolio
 
-Target role: SOC Analyst / Cloud Analyst [Remote]
+Target role: Information Security Analyst / SOC Analyst [Remote]
 Contact: [adrianb.urena@gmail.com] · [LinkedIn.com/adrianb.urena]
 
 **Mad Hat**, a multi-user training environment
@@ -14,7 +14,7 @@ Documented cloud security investigations, built in a live Azure tenant.
 | 3 | [Privilege Audit](azure/03-privilege-audit.md) | RBAC and least privilege | 26/09/2026 |
 | 4 | [The Friday Deploy](azure/04-the-friday-deploy.md) | Compute attack surface | 30/09/2026 |
 | 5 | [Network the Operative](azure/05-network-the-operative.md) | Network segmentation | 14/10/2026 |
-| 6 | [Bucket Looting](azure/06-bucket-looting.md) | Storage exposure hunting | Tentative: October 2026 |
+| 6 | [Bucket Looting](azure/06-bucket-looting.md) | Storage exposure hunting | 23/10/26 |
 | 7 | [Find the Anomaly](azure/07-find-the-anomaly.md) | Log analysis and KQL | Week 7, Tentative October 2026 |
 | 8 | [Hunt the Threat](azure/08-hunt-the-threat.md) | SIEM operations (Sentinel) | Tentative: October 2026 |
 | 9 | [Score the Tenant](azure/09-score-the-tenant.md) | Cloud security posture | Tentative: November 2026 |
