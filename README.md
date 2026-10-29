@@ -3,7 +3,7 @@
 Target role: Information Security Analyst / SOC Analyst [Remote]
 Contact: [adrianb.urena@gmail.com] · [LinkedIn.com/adrianb.urena]
 
-**Mad Hat**, a multi-user training environment
+**Mad Hat**, a multi-user Azure Cloud training environment
 Documented cloud security investigations, built in a live Azure tenant.
 
 ## Investigations
@@ -14,11 +14,11 @@ Documented cloud security investigations, built in a live Azure tenant.
 | 3 | [Privilege Audit](azure/03-privilege-audit.md) | RBAC and least privilege | 26/09/2026 |
 | 4 | [The Friday Deploy](azure/04-the-friday-deploy.md) | Compute attack surface | 30/09/2026 |
 | 5 | [Network the Operative](azure/05-network-the-operative.md) | Network segmentation | 14/10/2026 |
-| 6 | [Bucket Looting](azure/06-bucket-looting.md) | Storage exposure hunting | 23/10/26 |
-| 7 | [Find the Anomaly](azure/07-find-the-anomaly.md) | Log analysis and KQL | Week 7, Tentative October 2026 |
-| 8 | [Hunt the Threat](azure/08-hunt-the-threat.md) | SIEM operations (Sentinel) | Tentative: October 2026 |
-| 9 | [Score the Tenant](azure/09-score-the-tenant.md) | Cloud security posture | Tentative: November 2026 |
-| 10 | [The Breach (capstone)](azure/10-the-breach-capstone.md) | Full incident investigation | Tentative: November 2026 |
+| 6 | [Bucket Looting](azure/06-bucket-looting.md) | Storage exposure hunting | 23/10/2026 |
+| 7 | [Find the Anomaly](azure/07-find-the-anomaly.md) | Log analysis and KQL | 29/10/2026 |
+| 8 | [Hunt the Threat](azure/08-hunt-the-threat.md) | SIEM operations (Sentinel) | In Progress: 03/11/2026 |
+| 9 | [Score the Tenant](azure/09-score-the-tenant.md) | Cloud security posture | In Progress: 10/11/2026 |
+| 10 | [The Breach (capstone)](azure/10-the-breach-capstone.md) | Full incident investigation | In Progress: November 2026 |
 
 **Real Business Case**
 | # | Title | Focus | Write-up |

@@ -59,7 +59,7 @@ The storage account has public network access disabled from the internet. The on
 
 The longest prefix gets priority. A /0 is loosely defined because it contains over 4 billion addresses. A /32 contains only one address because each octet in the IP address is a fixed number.
 
-| Prefijo | Bits libres | Direcciones |
+| Prefix | Free Bits | Addresses |
 |---|-----|---|
 |/0 | 32 | 4,294,967,296 |
 |/16| 16 | 65,536 |
